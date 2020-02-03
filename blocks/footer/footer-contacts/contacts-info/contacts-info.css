@@ -1,0 +1,37 @@
+
+.contacts-info {
+	width: 220px;
+	min-height: 210px;
+	padding: 50px;
+	padding-bottom: 45px;
+	color: #666666;
+	
+	background-color: #ffffff;
+}
+
+.contacts-info__title {
+	display: block;
+	margin-bottom: 25px;
+
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.contacts-info__address {
+	margin-bottom: 18px;
+
+	line-height: 18px;
+}
+
+.contacts-info__phone {
+	margin-bottom: 38px;
+
+	line-height: 18px;
+}
+
+.contacts-info__button {
+	display: block;
+	width: 220px;
+	height: 50px;
+}

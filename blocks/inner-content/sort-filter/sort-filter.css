@@ -1,0 +1,64 @@
+
+.sort-filter {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 55px;
+}
+
+.sort-filter__title {
+	width: 260px;
+
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.sort-filter__list {
+	display: flex;
+	justify-content: flex-end;
+	width: 360px;
+}
+
+.sort-filter__item:nth-child(1),
+.sort-filter__item:nth-child(2) {
+	width: 85px;
+}
+
+.sort-filter__item:nth-child(3) {
+	width: 130px;
+}
+
+.sort-filter__item:nth-child(4),
+.sort-filter__item:nth-child(5) {
+	width: 30px;
+	text-align: right;
+}
+
+.sort-filter__link {
+	display: block;
+
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-filter__link:hover,
+.sort-filter__link:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+	
+.sort-filter__link:active {
+	color: rgba(0, 0, 0, 1);
+}
+
+.sort-filter__link:hover .sort-filter__image {
+	opacity: 0.7;	
+}
+		
+.sort-filter__link:active .sort-filter__image {
+	opacity: 1;
+}	
+
+.sort-filter__image {
+	opacity: 0.3;
+}	

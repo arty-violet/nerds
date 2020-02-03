@@ -1,0 +1,20 @@
+
+@import url(logo/logo.css);
+@import url(site-nav/site-nav.css);
+@import url(user-nav/user-nav.css); 
+
+
+.header {
+  width: 1160px;
+	margin: 0 auto;
+	padding: 0 140px;
+  
+  background-color: #eeeeee;
+}
+
+.header__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	min-height: 115px;
+}

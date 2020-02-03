@@ -1,0 +1,11 @@
+
+@import url(slider/slider.css);
+@import url(services/services.css);
+@import url(advantages/advantages.css);
+@import url(our-clients/our-clients.css);
+
+.main-content {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 140px;
+}

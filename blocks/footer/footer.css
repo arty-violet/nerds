@@ -1,0 +1,14 @@
+
+@import url(footer-contacts/footer-contacts.css);
+@import url(footer-social/footer-social.css);
+
+
+.footer {
+	width: 1440px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+.footer--inner-page {
+	margin-top: 60px;
+}

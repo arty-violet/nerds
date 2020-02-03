@@ -1,0 +1,22 @@
+
+@import url(contacts-info/contacts-info.css);
+
+
+.footer-contacts {
+	position: relative;
+
+	width: 1440px;
+	height: 416px;
+}
+
+.footer-contacts__map {
+	width: 1440px; 
+	height: 416px;
+}
+
+.footer-contacts__data {
+	position: absolute;
+	top: 55px;
+	left: 140px;
+	z-index: 10;
+}

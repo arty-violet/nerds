@@ -1,0 +1,157 @@
+
+.feedback {	
+	position: fixed;
+	bottom: 180px;
+	left: 50%;
+	z-index: 10;
+
+	display: none;
+	box-sizing: border-box;
+  width: 960px;
+	height: 590px;
+	margin-left: -480px;
+	padding: 65px 100px;
+
+	background-color: #ffffff;
+	box-shadow: 4px 20px 20px 5px rgba(0, 0, 0, 0.65);
+}
+
+.feedback--show {
+	display: block;
+}
+
+.feedback__title {	
+	margin-bottom: 35px;
+
+	font-size: 45px;
+	line-height: 50px;
+}
+
+.feedback__inputs {
+	display: flex;
+	justify-content: space-between;
+}
+
+.feedback__input-area {
+	margin-bottom: 32px;
+}
+
+.feedback__label {
+	display: block;
+	margin-bottom: 5px;
+
+	font-weight: 700;
+}
+
+.feedback__name,
+.feedback__email,
+.feedback__text {
+	box-sizing: border-box;
+	padding: 10px;
+	
+	font: inherit;
+	
+	border: 2px solid #d7dcde;
+}
+
+.feedback__name,
+.feedback__email {
+	width: 360px;
+	height: 50px;
+}
+
+.feedback__text {
+	width: 760px;
+	height: 120px;
+
+	resize: none;
+}
+
+.feedback__name::placeholder,
+.feedback__email::placeholder,
+.feedback__text::placeholder {
+	color: rgba(68, 68, 68, 0.5);
+}
+
+.feedback__name:hover,
+.feedback__email:hover,
+.feedback__text:hover {
+	border-color: #b4b9bb;
+}
+
+.feedback__name:focus,
+.feedback__email:focus,
+.feedback__text:focus,
+.feedback__name:focus::placeholder,
+.feedback__email:focus::placeholder,
+.feedback__text:focus::placeholder {
+	color: rgba(68, 68, 68, 1);
+	border-color: #000000;
+	outline: none;
+}
+
+.feedback__name:required,
+.feedback__email:required {
+	color: #e74246;
+	border-color: #e74246;
+}
+
+.feedback__text-area {
+	min-height: 160px;
+	margin-bottom: 35px;
+}
+
+.feedback__send-button {
+	width: 260px;
+	height: 50px;
+	margin-right: 0;
+}
+
+.feedback__close-button {
+	position: absolute;
+	top: 78px;
+	right: 90px;
+
+	width: 22px;
+	height: 22px;
+
+	background-color: transparent;
+	border: 0;
+
+	cursor: pointer;
+}
+
+.feedback__close-button::before, 
+.feedback__close-button::after {
+	content: "";
+	
+	position: absolute;
+	top: 9px;
+	left: -1px;
+	
+	width: 25px;
+	height: 3px;
+	
+	background-color: #fecccd;
+}
+
+.feedback__close-button::before{
+	transform: rotate(45deg);
+}
+
+.feedback__close-button::after {
+	transform: rotate(-45deg);
+}
+
+.feedback__close-button:hover::before, 
+.feedback__close-button:hover::after,
+.feedback__close-button:focus::before, 
+.feedback__close-button:focus::after {
+	background-color: #fb565a;
+}
+	
+.feedback__close-button:active::before, 
+.feedback__close-button:active::after {
+	background-color: #ffeeee;
+}
+	

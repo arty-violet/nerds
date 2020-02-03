@@ -1,0 +1,97 @@
+
+.price-filter {
+  margin-bottom: 55px;
+}
+
+.price-filter__title {
+  width: 100%;
+  margin-bottom: 50px;
+
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.price-filter__block {
+  width: 260px;
+  height: 130px;
+}
+
+.price-filter__controls {
+  position: relative;
+
+  height: 41px;
+  margin-bottom: 13px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.price-filter__scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.price-filter__bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.price-filter__toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.price-filter__toggle--min {
+  left: 50px;
+}
+
+.price-filter__toggle--max {
+  left: 110px;
+}
+
+.price-filter__inputs {
+  font-size: 0;
+}
+
+.price-filter__lable {
+  display: inline-block;
+  width: 50%;
+
+  font-size: 18px;
+}
+
+.price-filter__lable--max-price {
+  text-align: right;
+}
+
+.price-filter__input {
+  width: 60px;
+  margin-left: 10px;
+  padding: 9px 10px;
+
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+
+  background: #f1f1f1;
+  border: none;
+  border-radius: 4px;
+}
