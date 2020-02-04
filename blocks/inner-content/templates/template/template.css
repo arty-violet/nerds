@@ -17,17 +17,14 @@
 	position: absolute;
 	bottom: 0;
 	z-index: 10;
-
+	
+	display: none;
 	padding: 25px 60px;
 	width: 240px;
 	height: 180px;
 
 	text-align: center;
 	background-color: #eeeeee;
-}
-
-.template__hover--hidden {
-	display: none;
 }
 
 .template__hover--shown {
