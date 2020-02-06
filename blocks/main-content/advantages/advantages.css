@@ -1,21 +1,23 @@
 
 .advantages {
-	display: flex;
-	justify-content: space-between;
 	padding-top: 39px;
 	padding-bottom: 49px;
-
+	
 	border-bottom: 2px solid #eeeeee;
 }
 
-.advantages__column-left {
+.advantages__columns {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
+}
+
+.advantages__column-left {
 	width: 660px;
 	padding-top: 35px;
 }
 
 .advantages__slogan {
+	display: block;
 	min-height: 90px;
 	margin-bottom: 33px;
 
@@ -31,6 +33,7 @@
 }
 
 .advantages__order-title {
+	display: block;
 	margin-bottom: 24px;
 
 	font-weight: 700;

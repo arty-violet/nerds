@@ -2,8 +2,11 @@
 @import url(template/template.css);
 
 .templates {
+	margin-bottom: 26px;
+}
+
+.templates__wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-bottom: 26px;
 }
