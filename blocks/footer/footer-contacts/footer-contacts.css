@@ -8,8 +8,11 @@
 	width: 1440px;
 	height: 416px;
 }
+.footer-contacts__img-map {
+	position: absolute;
+}
 
-.footer-contacts__map {
+.footer-contacts__api-map {
 	width: 1440px; 
 	height: 416px;
 }
