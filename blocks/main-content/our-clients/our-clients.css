@@ -1,4 +1,10 @@
 
+.our-clients__start-line {
+	height: 125px;
+	margin-top: -125px;
+	visibility: hidden;
+}
+
 .our-clients__list {
 	display: flex;
 	padding-top: 47px;

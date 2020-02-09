@@ -12,7 +12,7 @@
 
 	<body>
 		
-		<header class="header">
+		<header class="header" id="store">
 			<nav class="header__nav">
 				<a href="index.html" class="logo">
 					<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
@@ -21,7 +21,7 @@
 				<ul class="site-nav__list">
           <li><a class="site-nav__link" href="index.html#studio">Студия</a></li>
           <li><a class="site-nav__link" href="index.html#clients">Клиенты</a></li>
-					<li><a class="site-nav__link site-nav__link--current" href="#">Магазин</a></li>
+					<li><a class="site-nav__link site-nav__link--current">Магазин</a></li>
           <li><a class="site-nav__link" href="#contacts">Контакты</a></li>
 				</ul>
 
@@ -30,6 +30,25 @@
 				</ul>
 			</nav>
 		</header>
+
+    <header class="header--sticky">
+      <nav class="header__nav--sticky">
+        <a href="index.html" class="logo">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
+        </a>
+
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html#studio">Студия</a></li>
+          <li><a class="site-nav__link" href="index.html#clients">Клиенты</a></li>
+					<li><a class="site-nav__link site-nav__link--current" href="#store">Магазин</a></li>
+          <li><a class="site-nav__link" href="#contacts">Контакты</a></li>
+        </ul>
+
+        <ul class="user-nav__list">
+          <li><a class="user-nav__link" href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
 		
 		
 		<main class="inner-content">

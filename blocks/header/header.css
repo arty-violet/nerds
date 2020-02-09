@@ -5,6 +5,12 @@
 
 
 .header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	
 	width: 1160px;
 	margin: 0 auto;
 	padding: 0 140px;
@@ -12,9 +18,28 @@
   background-color: #eeeeee;
 }
 
+.header--sticky {
+	position: sticky;
+	top: 0;
+	z-index: 5;
+	
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 140px;
+
+	background-color: #ffffff;
+}
+
 .header__nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
+	min-height: 115px;
+}
+
+.header__nav--sticky {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	min-height: 115px;
 }

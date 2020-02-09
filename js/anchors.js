@@ -4,11 +4,11 @@
 for (var i = 0; i < linkNav.length; i++) {
     linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
         e.preventDefault(); //отменяем стандартное поведение
-        var w = window.pageYOffset,  // производим прокрутка прокрутка
+        var w = window.pageYOffset,  // производим прокрутку
             hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
         t = document.querySelector(hash).getBoundingClientRect().top,  // отступ от окна браузера до id
             start = null;
-        requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
+        requestAnimationFrame(step); 
         function step(time) {
             if (start === null) start = time;
             var progress = time - start,

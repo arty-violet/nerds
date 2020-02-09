@@ -6,6 +6,12 @@
 	border-bottom: 2px solid #eeeeee;
 }
 
+.advantages__start-line {
+	height: 125px;
+	margin-top: -125px;
+	visibility: hidden;
+}
+
 .advantages__columns {
 	display: flex;
 	justify-content: space-between;

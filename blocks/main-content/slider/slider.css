@@ -4,6 +4,8 @@
 
 .slider {
 	position: relative;
+	z-index: 10;
+
 	width: 1160px;
 	min-height: 430px;
 	margin-left: -140px;

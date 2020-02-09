@@ -12,9 +12,28 @@
 
   <body>
 
-    <header class="header">
+    <header class="header" id="index">
       <nav class="header__nav">
         <a class="logo">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
+        </a>
+
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="#studio">Студия</a></li>
+          <li><a class="site-nav__link" href="#clients">Клиенты</a></li>
+          <li><a class="site-nav__link" href="store.html">Магазин</a></li>
+          <li><a class="site-nav__link" href="#contacts">Контакты</a></li>
+        </ul>
+
+        <ul class="user-nav__list">
+          <li><a class="user-nav__link" href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="header--sticky">
+      <nav class="header__nav--sticky">
+        <a class="logo" href="#index">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
         </a>
 
@@ -99,8 +118,10 @@
           </li>
         </ul>
       </section>
+
       
-      <section class="advantages" id="studio">
+      <section class="advantages">
+        <hr id="studio" class="advantages__start-line">
         <h2 class="visually-hidden">Преимущества студии</h2>
         <div class="advantages__columns">
           <div class="advantages__column-left">
@@ -136,6 +157,7 @@
       </section>
     
       <section class="our-clients" id="clients">
+        <hr id="clients" class="our-clients__start-line">
         <h2 class="visually-hidden">Наши клиенты</h2>
         <ul class="our-clients__list">
           <li class="our-clients__item">
@@ -166,7 +188,7 @@
     <footer class="footer" id="contacts">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <img class="footer-contacts__img-map" src="img/map.jpg" width="1440" height="416" alt="Наш офис расположен на пересечении Волынского переулка и Большой Конюшенной улицы"></img>
+        <img class="footer-contacts__img-map" src="img/map.jpg" width="1440" height="416" alt="Наш офис расположен на пересечении Волынского переулка и Большой Конюшенной улицы">
         <div id="map" class="footer-contacts__api-map"></div>
         <div class="footer-contacts__data contacts-info">
           <h3 class="visually-hidden">Как нас найти</h3>

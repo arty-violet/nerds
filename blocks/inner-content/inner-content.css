@@ -12,6 +12,10 @@
 }
 
 .inner-content__header {
+	position: relative;
+	top: 0;
+	z-index: 10;
+
 	width: 1160px;
 	min-height: 240px;
 	margin-left: -140px;
