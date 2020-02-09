@@ -42,11 +42,7 @@
 	border: 4px solid #ffffff;
 	border-radius: 50%;
 	
-	cursor:pointer;
-}
-
-.slider__radio-label:focus {
-	outline: solid 1px;
+	cursor: pointer;
 }
 
 #btn-1:checked ~ .slider__controls label[for="btn-1"],
@@ -58,7 +54,8 @@
 #btn-1:checked:focus ~ .slider__controls label[for="btn-1"],
 #btn-2:checked:focus ~ .slider__controls label[for="btn-2"],
 #btn-3:checked:focus ~ .slider__controls label[for="btn-3"] { 
-outline: -webkit-focus-ring-color auto 1px;
+	outline: none;
+	box-shadow: 0 0 1px 1px rgb(60, 77, 236);
 }
 
 #btn-1:checked ~ .slider__controls label[for="btn-1"]::after,

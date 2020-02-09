@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>NЁRDS шаблоны</title>
+		<title>NЁRDS шаблоны сайтов</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -31,21 +31,21 @@
 			</nav>
 		</header>
 
-    <header class="header--sticky">
-      <nav class="header__nav--sticky">
-        <a href="index.html" class="logo">
+    <header class="sticky-header">
+      <nav class="sticky-header__nav">
+        <a href="index.html" class="logo" tabindex="-1">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
         </a>
 
         <ul class="site-nav__list">
-          <li><a class="site-nav__link" href="index.html#studio">Студия</a></li>
-          <li><a class="site-nav__link" href="index.html#clients">Клиенты</a></li>
-					<li><a class="site-nav__link site-nav__link--current" href="#store">Магазин</a></li>
-          <li><a class="site-nav__link" href="#contacts">Контакты</a></li>
+          <li><a class="site-nav__link" href="index.html#studio" tabindex="-1">Студия</a></li>
+          <li><a class="site-nav__link" href="index.html#clients" tabindex="-1">Клиенты</a></li>
+					<li><a class="site-nav__link site-nav__link--current" href="#store" tabindex="-1">Магазин</a></li>
+          <li><a class="site-nav__link" href="#contacts" tabindex="-1">Контакты</a></li>
         </ul>
 
         <ul class="user-nav__list">
-          <li><a class="user-nav__link" href="#">Корзина</a></li>
+          <li><a class="user-nav__link" href="#" tabindex="-1">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -124,7 +124,7 @@
 								</li>
 							</ul>
 						</fieldset>
-						<button class="filters__button button button--grey" type="submit">Показать</button>
+						<button class="filters__button button button--grey" type="submit" target="_blank">Показать</button>
 					</form>
 				</aside>
 				
@@ -158,92 +158,92 @@
 					<article class="templates">
 						<h2 class="visually-hidden">Каталог шаблонов</h2>
 						<div class="templates__wrapper">
-							<section class="template">
+							<section class="template template__1">
 								<h3 class="visually-hidden">Шаблон сайта SEDONA</h3>
 								<div class="template__view">
 									<img src="img/img-sedona.jpg" width="360" height="576" alt="Главная страница сайта Sedona">
 								</div>
-								<div class="template__hover">
-									<strong class="template__hover-title">SEDONA</strong>
-									<p class="template__hover-text">Информационный сайт<br> для туристов</p>
+								<div class="template__info">
+									<strong class="template__info-title">SEDONA</strong>
+									<p class="template__info-text">Информационный сайт<br> для туристов</p>
 									<a class="template__button button" href="#" target="_blank">
 										<span class="template__price">9 900 РУБ.</span>
-										<span class="template__look">Посмотреть</span>
+										<span class="template__look visually-hidden">Посмотреть</span>
 									</a>
 								</div>
 							</section>
 
-							<section class="template">
+							<section class="template template__2">
 								<h3 class="visually-hidden">Шаблон сайта PINK</h3>
 								<div class="template__view">
 									<img src="img/img-pink.jpg" width="360" height="576" alt="Главная страница сайта Pink">
 								</div>
-								<div class="template__hover">
-									<strong class="template__hover-title">PINK APP</strong>
-									<p class="template__hover-text">Продуктовый лендинг приложения для iOS и Android</p>
+								<div class="template__info">
+									<strong class="template__info-title">PINK APP</strong>
+									<p class="template__info-text">Продуктовый лендинг приложения для iOS и Android</p>
 									<a class="template__button button" href="#" target="_blank">
 										<span class="template__price">9 900 РУБ.</span>
-										<span class="template__look">Посмотреть</span>
+										<span class="template__look visually-hidden">Посмотреть</span>
 									</a>
 								</div>
 							</section>
 
-							<section class="template">
+							<section class="template template__3">
 								<h3 class="visually-hidden">Шаблон сайта Barbershop BORODINSKI</h3>
 								<div class="template__view">
 									<img src="img/img-barbershop.jpg" width="360" height="576" alt="Главная страница сайта Barbershop Borodinski">
 								</div>
-								<div class="template__hover">
-									<strong class="template__hover-title">BARBERSHOP</strong>
-									<p class="template__hover-text">Сайт салона красоты.<br> Для мужчин, да.</p>
+								<div class="template__info">
+									<strong class="template__info-title">BARBERSHOP</strong>
+									<p class="template__info-text">Сайт салона красоты.<br> Для мужчин, да.</p>
 									<a class="template__button button" href="https://artysoule.github.io/borodinski/" target="_blank">
 										<span class="template__price">9 900 РУБ.</span>
-										<span class="template__look">Посмотреть</span>
+										<span class="template__look visually-hidden">Посмотреть</span>
 									</a>
 								</div>
 							</section>
 
-							<section class="template">
+							<section class="template template__4">
 								<h3 class="visually-hidden">Шаблон сайта MISHKA</h3>
 								<div class="template__view">
 									<img src="img/img-mishka.jpg" width="360" height="576" alt="Главная страница сайта Mishka">
 								</div>
-								<div class="template__hover">
-									<strong class="template__hover-title">MISHKA</strong>
-									<p class="template__hover-text">Интернет-магазин<br> вязаных игрушек</p>
+								<div class="template__info">
+									<strong class="template__info-title">MISHKA</strong>
+									<p class="template__info-text">Интернет-магазин<br> вязаных игрушек</p>
 									<a class="template__button button" href="#" target="_blank">
 										<span class="template__price">9 900 РУБ.</span>
-										<span class="template__look">Посмотреть</span>
+										<span class="template__look visually-hidden">Посмотреть</span>
 									</a>
 								</div>
 							</section>
 
-							<section class="template">
+							<section class="template template__5">
 								<h3 class="visually-hidden">Шаблон сайта A PLUS</h3>
 								<div class="template__view">
 									<img src="img/img-aplus.jpg" width="360" height="576" alt="Главная страница сайта  Aaplus">
 								</div>
-								<div class="template__hover">
-									<strong class="template__hover-title">A PLUS</strong>
-									<p class="template__hover-text">Лендинг курсов повышения квалификации</p>
+								<div class="template__info">
+									<strong class="template__info-title">A PLUS</strong>
+									<p class="template__info-text">Лендинг курсов повышения квалификации</p>
 									<a class="template__button button" href="#" target="_blank">
 										<span class="template__price">9 900 РУБ.</span>
-										<span class="template__look">Посмотреть</span>
+										<span class="template__look visually-hidden">Посмотреть</span>
 									</a>
 								</div>
 							</section>
 
-							<section class="template">
+							<section class="template template__6">
 								<h3 class="visually-hidden">КВАСТ</h3>
 								<div class="template__view">
 									<img src="img/img-kvast.jpg" width="360" height="576" alt="Главная страница сайта Kvast">
 								</div>
-								<div class="template__hover">
-									<strong class="template__hover-title">КВАСТ</strong>
-									<p class="template__hover-text">Промо-сайт производителя крафтового кваса</p>
+								<div class="template__info">
+									<strong class="template__info-title">КВАСТ</strong>
+									<p class="template__info-text">Промо-сайт производителя крафтового кваса</p>
 									<a class="template__button button" href="#" target="_blank">
 										<span class="template__price">9 900 РУБ.</span>
-										<span class="template__look">Посмотреть</span>
+										<span class="template__look visually-hidden">Посмотреть</span>
 									</a>
 								</div>
 							</section>
@@ -337,12 +337,15 @@
       </form>
       <button class="feedback__close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
-
+    
+    <div class="overlay"></div>
 
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-		<script src="blocks/footer/footer-contacts/map/map.js"></script>
-		<!-- <script src="blocks/inner-content/templates/template/template.js" type="text/javascript"></script> -->
-    <script src="js/anchors.js"></script>    
+    <script src="blocks/footer/footer-contacts/map/map.js"></script>
+		<script src="blocks/inner-content/templates/template/template.js"></script>  
+    <script src="js/anchors.js"></script>
+    <script src="js/feedback.js"></script>
+    <script src="js/filters.js"></script>
       
 	</body>
 	

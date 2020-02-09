@@ -3,7 +3,7 @@
 	position: fixed;
 	bottom: 180px;
 	left: 50%;
-	z-index: 10;
+	z-index: 20;
 
 	display: none;
 	box-sizing: border-box;
@@ -16,8 +16,32 @@
 	box-shadow: 4px 20px 20px 5px rgba(0, 0, 0, 0.65);
 }
 
-.feedback--show {
+.feedback--animation-show {
 	display: block;
+	animation-name: bounce;
+	animation-duration: 0.6s;
+}
+
+@keyframes bounce {
+	0%   {transform: translateY(-2000px);}
+	70%	 {transform: translateY(30px);}
+	90%  {transform: translateY(-10px);}
+	100% {transform: translateY(0px);}
+}
+
+.feedback--static-show {
+	display: block;
+}
+
+.feedback--error {
+	animation-name: shake;
+	animation-duration: 0.6s;
+}
+
+@keyframes shake {
+	0%, 100% 								{transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% 			{transform: translateX(10px);}
 }
 
 .feedback__title {	

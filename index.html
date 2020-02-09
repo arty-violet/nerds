@@ -31,21 +31,21 @@
       </nav>
     </header>
 
-    <header class="header--sticky">
-      <nav class="header__nav--sticky">
-        <a class="logo" href="#index">
+    <header class="sticky-header">
+      <nav class="sticky-header__nav">
+        <a class="logo" href="#index" tabindex="-1">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
         </a>
 
         <ul class="site-nav__list">
-          <li><a class="site-nav__link" href="#studio">Студия</a></li>
-          <li><a class="site-nav__link" href="#clients">Клиенты</a></li>
-          <li><a class="site-nav__link" href="store.html">Магазин</a></li>
-          <li><a class="site-nav__link" href="#contacts">Контакты</a></li>
+          <li><a class="site-nav__link" href="#studio" tabindex="-1">Студия</a></li>
+          <li><a class="site-nav__link" href="#clients" tabindex="-1">Клиенты</a></li>
+          <li><a class="site-nav__link" href="store.html" tabindex="-1">Магазин</a></li>
+          <li><a class="site-nav__link" href="#contacts" tabindex="-1">Контакты</a></li>
         </ul>
 
         <ul class="user-nav__list">
-          <li><a class="user-nav__link" href="#">Корзина</a></li>
+          <li><a class="user-nav__link" href="#" tabindex="-1">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -260,10 +260,12 @@
       <button class="feedback__close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
     
+    <div class="overlay"></div>
 
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="blocks/footer/footer-contacts/map/map.js"></script>
-    <script src="js/anchors.js"></script>    
+    <script src="js/anchors.js"></script>  
+    <script src="js/feedback.js"></script>  
         
   </body>
 

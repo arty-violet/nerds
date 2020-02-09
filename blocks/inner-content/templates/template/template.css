@@ -1,7 +1,8 @@
 
 .template {
-	height: 616px;
 	position: relative;
+
+	height: 616px;
 	margin-bottom: 33px;
 }
 
@@ -13,25 +14,47 @@
 	background-position: 0 0;
 }
 
-.template__hover {
+.template__info {
 	position: absolute;
 	bottom: 0;
 	z-index: 10;
 	
 	display: none;
-	padding: 25px 60px;
 	width: 240px;
 	height: 180px;
+	padding: 25px 60px;
 
 	text-align: center;
 	background-color: #eeeeee;
 }
 
-.template__hover--shown {
+.template__info--show {
 	display: block;
+
+	opacity: 1;
+
+	animation-name: appearing;
+	animation-duration: 0.4s;
+	animation-timing-function: linear;
 }
 
-.template__hover-title {
+@keyframes appearing {
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.template:not(:hover) .template__info:not(:hover) {
+	animation-name: disappearing;
+	animation-duration: 0.45s;
+	animation-timing-function: linear;
+}
+
+@keyframes disappearing {
+	0%   {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+.template__info-title {
 	display: block;
 	margin-bottom: 15px;
 
@@ -40,7 +63,7 @@
 	line-height: 30px;
 }
 
-.template__hover-text {
+.template__info-text {
 	margin-bottom: 30px;
 
 	line-height: 18px;
@@ -69,6 +92,28 @@
 	display: block;
 }
 
+.template__price:hover {
+	animation-name: price-disappearing;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+}
+
+@keyframes price-disappearing {
+	0%   {opacity: 1;}
+	100% {font-size: 15px; text-shadow: 0 0 15px #ffffff; opacity: 0;}
+}
+
 .template__look {
-	display: none;
+	display: block;
+}
+
+.template__look:not(:hover) {
+	animation-name: look-disappearing;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+}
+
+@keyframes look-disappearing {
+	0%   {opacity: 1;}
+	100% {font-size: 15px; text-shadow: 0 0 15px #ffffff; opacity: 0;}
 }

@@ -6,9 +6,8 @@
 @import url(../blocks/inner-content/inner-content.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/feedback/feedback.css);
+@import url(../blocks/overlay/overlay.css);
 
-
-/*common properties*/
 
 /* * {
 	outline: 1px dashed red;
@@ -30,4 +29,3 @@ a {
 	text-decoration: none;
 	text-transform: uppercase;
 }
-
