@@ -14,7 +14,7 @@
 .inner-content__header {
 	position: relative;
 	top: 0;
-	z-index: 10;
+	z-index: 30;
 
 	width: 1160px;
 	min-height: 240px;

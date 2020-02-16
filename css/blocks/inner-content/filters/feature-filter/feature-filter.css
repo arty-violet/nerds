@@ -51,18 +51,18 @@
   width: 30px;
   height: 30px;
     
-  background-image: url("img/checkbox-off-1.svg");
+  background-image: url("../../../../../img/feature-filter/checkbox-off-1.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .feature-filter__checkbox:hover + .feature-filter__label::before,
 .feature-filter__checkbox:focus + .feature-filter__label::before {
-  background-image: url("img/checkbox-off-2.svg");
+  background-image: url("../../../../../img/feature-filter/checkbox-off-2.svg");
 }
 
 .feature-filter__checkbox:disabled + .feature-filter__label::before {
-  background-image: url("img/checkbox-off-2.svg");
+  background-image: url("../../../../../img/feature-filter/checkbox-off-2.svg");
   opacity: 0.1;
 }
 
@@ -77,12 +77,12 @@
   height: 30px;
 
   background-color: #ffffff;
-  background-image: url("img/checkbox-on-1.svg");
+  background-image: url("../../../../../img/feature-filter/checkbox-on-1.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .feature-filter__checkbox:checked:hover + .feature-filter__label::after,
 .feature-filter__checkbox:checked:focus + .feature-filter__label::after {
-  background-image: url("img/checkbox-on-2.svg");
+  background-image: url("../../../../../img/feature-filter/checkbox-on-2.svg");
 }

@@ -34,6 +34,11 @@
 	background-color: #d7373b;
 }
 
+.footer-social__link:hover .footer-social__svg-path,
+.footer-social__link:focus .footer-social__svg-path {
+	fill: #ffffff;
+}
+
 .footer-social__link:active .footer-social__svg-path {
 	opacity: 0.3;
 } 

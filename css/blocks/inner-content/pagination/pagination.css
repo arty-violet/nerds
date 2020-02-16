@@ -37,7 +37,8 @@
 	line-height: 44px;
 	
 	background-color: #ffffff;	
-  border: 3px solid #dbdbdb;
+	border: 3px solid #dbdbdb;
+	cursor: default;
 }
 
 .pagination__link--current:hover,

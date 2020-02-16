@@ -3,7 +3,7 @@
 	max-width: 200px;
 	margin-left: 45px;
 
-	background: url(img/cart-icon.svg) no-repeat left center;
+	background: url(../../../img/user-nav/cart-icon.svg) no-repeat left center;
 }
 
 .user-nav__link {

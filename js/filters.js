@@ -1,6 +1,6 @@
 
 var filtersButton = document.querySelector(".filters__button");
-var filtersForm = feedbackPopup.querySelector(".filters");
+var filtersForm = document.querySelector(".filters");
 
 
 filtersButton.addEventListener("click", function (evt) {

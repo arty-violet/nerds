@@ -4,7 +4,7 @@
 
 .slider {
 	position: relative;
-	z-index: 10;
+	z-index: 20;
 
 	width: 1160px;
 	min-height: 430px;
@@ -101,16 +101,16 @@
 }
 
 .slider__image--1 {
-	background-image: url(img/slide1.png);
+	background-image: url(../../../../img/slider/slide-1.png);
 	background-position: 30px 17px;
 }
 
 .slider__image--2 {
-	background-image: url(img/slide2.png);
+	background-image: url(../../../../img/slider/slide-2.png);
 	background-position: 95px 0px;
 }
 
 .slider__image--3 {
-	background-image: url(img/slide3.png);
+	background-image: url(../../../../img/slider/slide-3.png);
 	background-position: 0px 17px;
 }

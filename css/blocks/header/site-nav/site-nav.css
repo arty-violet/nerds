@@ -27,9 +27,25 @@
 
 .site-nav__link--current {
   position: relative;
+  
+	cursor: default;
 }
 
-.site-nav__link--current::after {
+.site-nav__link--current:hover,
+.site-nav__link--current:focus {
+  color: #000000;
+}
+
+.site-nav__link--current:active {
+	opacity: 1;
+}
+
+.site-nav__link--sticky-current {
+  position: relative;
+}
+
+.site-nav__link--current::after,
+.site-nav__link--sticky-current::after {
   content: "";
 
   position: absolute;
