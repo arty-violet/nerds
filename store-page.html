@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>NЁRDS шаблоны сайтов</title>
+    
+    <meta charset="utf-8">
+    <meta content="Arty Soule" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Medium.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Medium.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="css/libs.css?200614" as="style">
+    <link rel="preload" href="css/style.css?200614" as="style">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/libs.css?200614">
+    <link rel="stylesheet" href="css/style.css?200614">
+  </head>
+  <body class="container grid-system">
+    <hr class="header__start-line" id="_">
+    <header class="header">
+      <nav class="header__nav">
+        <button class="sandwich"><span class="hidden">кнопка навигации</span><span class="sandwich__line --top"></span><span class="sandwich__line --middle"></span><span class="sandwich__line --bottom"></span></button><a class="logo" href="index.html">
+          <svg class="icon-nerds-logo">
+            <use xlink:href="img/sprite/sprite.svg#nerds-logo"></use>
+          </svg></a>
+        <ul class="site-nav">
+          <li><a class="site-nav__link" href="index.html" data-studio>Студия</a>
+          </li>
+          <li><a class="site-nav__link" href="index.html">Клиенты</a>
+          </li>
+          <li><a class="site-nav__link --current" href="#_">Магазин</a>
+          </li>
+          <li><a class="site-nav__link" href="#contacts">Контакты</a></li>
+        </ul>
+        <div class="user-nav"><a class="user-nav__link" href="#">
+            <svg class="icon-cart">
+              <use xlink:href="img/sprite/sprite.svg#cart"></use>
+            </svg><span>Корзина</span></a></div>
+      </nav>
+    </header>
+    
+    <main class="inner-content">
+      <header class="inner-content__header">
+        <h1 class="inner-content__title">Магазин готовых шаблонов</h1>
+      </header>
+      <div class="inner-content__collumns">
+        <section class="inner-content__collumn-left">
+          <h2 class="hidden">Фильтры по параметрам</h2>
+          <form class="filters" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="price-filter">
+              <legend class="price-filter__title">Стоимость:</legend>
+              <div class="price-filter__block">
+                <div class="price-filter__controls">
+                  <div class="price-filter__scale">
+                    <div class="price-filter__bar" style="margin-left: 20%; width: 30%"></div>
+                  </div>
+                  <div class="price-filter__toggle price-filter__toggle--min"></div>
+                  <div class="price-filter__toggle price-filter__toggle--max"></div>
+                </div>
+                <div class="price-filter__inputs">
+                  <label class="price-filter__lable price-filter__lable--min-price">от 
+                    <input class="price-filter__input" name="min-price" type="text" value="0">
+                  </label>
+                  <label class="price-filter__lable price-filter__lable--max-price">до 
+                    <input class="price-filter__input" name="max-price" type="text" value="15000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="grid-filter">
+              <legend class="grid-filter__title">Сетка:</legend>
+              <ul class="grid-filter__list">
+                <li class="grid-filter__option">
+                  <input class="hidden grid-filter__radio" id="filter-adaptive" type="radio" name="format" value="adaptive" checked="">
+                  <label class="grid-filter__label" for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li class="grid-filter__option">
+                  <input class="hidden grid-filter__radio" id="filter-fixed" type="radio" name="format" value="fixed">
+                  <label class="grid-filter__label" for="filter-fixed">Фиксированная</label>
+                </li>
+                <li class="grid-filter__option">
+                  <input class="hidden grid-filter__radio" id="filter-elastic" type="radio" name="format" value="elastic">
+                  <label class="grid-filter__label" for="filter-elastic">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="feature-filter">
+              <legend class="feature-filter__title">Особенности:</legend>
+              <ul class="feature-filter__list">
+                <li class="feature-filter__option">
+                  <input class="hidden feature-filter__checkbox" id="filter-slider" type="checkbox" name="slider" checked="">
+                  <label class="feature-filter__label" for="filter-slider">Слайдер</label>
+                </li>
+                <li class="feature-filter__option">
+                  <input class="hidden feature-filter__checkbox" id="filter-advantages" type="checkbox" name="advantages">
+                  <label class="feature-filter__label" for="filter-advantages">Блок преимуществ</label>
+                </li>
+                <li class="feature-filter__option">
+                  <input class="hidden feature-filter__checkbox" id="filter-news" type="checkbox" name="news" checked="">
+                  <label class="feature-filter__label" for="filter-news">Новости</label>
+                </li>
+                <li class="feature-filter__option">
+                  <input class="hidden feature-filter__checkbox" id="filter-gallery" type="checkbox" name="gallery">
+                  <label class="feature-filter__label" for="filter-gallery">Галерея</label>
+                </li>
+                <li class="feature-filter__option">
+                  <input class="hidden feature-filter__checkbox" id="filter-cart" type="checkbox" name="cart">
+                  <label class="feature-filter__label" for="filter-cart">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="filters__button button button--grey" type="submit" target="_blank">Показать</button>
+          </form>
+        </section>
+        <div class="inner-content__collumn-right">
+          <section class="sort-filter">
+            <h2 class="hidden">Фильтр сортировки</h2><strong class="sort-filter__title">Сортировать:</strong>
+            <ul class="sort-filter__list">
+              <li class="sort-filter__item"><a class="sort-filter__link" href="#">По цене</a></li>
+              <li class="sort-filter__item"><a class="sort-filter__link" href="#">По типу</a></li>
+              <li class="sort-filter__item"><a class="sort-filter__link" href="#">По названию</a></li>
+              <li class="sort-filter__item"><a class="sort-filter__link" href="#">
+                  <svg class="icon-triangle-down">
+                    <use xlink:href="img/sprite/sprite.svg#triangle-down"></use>
+                  </svg><span class="hidden">от большему к меньшему</span></a></li>
+              <li class="sort-filter__item"><a class="sort-filter__link" href="#">
+                  <svg class="icon-triangle-up">
+                    <use xlink:href="img/sprite/sprite.svg#triangle-up"></use>
+                  </svg><span class="hidden">от меньшего к большему</span></a></li>
+            </ul>
+          </section>
+          <article class="templates">
+            <h2 class="hidden">Каталог шаблонов</h2>
+            <div class="templates__wrapper">
+              <section class="template template__1">
+                <h3 class="hidden">Шаблон сайта SEDONA</h3>
+                <div class="template__view">
+                  <picture class="template__picture">
+                    <source srcset="img/webp/content/template/template__img-1.webp" type="image/webp"/><img class="template__img" src="img/content/template/template__img-1.jpg" alt="Главная страница сайта Sedona"/>
+                  </picture>
+                </div>
+                <div class="template__info template__info--show"><strong class="template__info-title">SEDONA</strong>
+                  <p class="template__info-text">Информационный сайт<br>для туристов</p><a class="template__button button" href="#" target="_blank"><span class="template__price">9 900 РУБ.</span><span class="template__look --not-active">Посмотреть</span></a>
+                </div>
+              </section>
+              <section class="template template__2">
+                <h3 class="hidden">Шаблон сайта PINK</h3>
+                <div class="template__view">
+                  <picture class="template__picture">
+                    <source srcset="img/webp/content/template/template__img-2.webp" type="image/webp"/><img class="template__img" src="img/content/template/template__img-2.jpg" alt="Главная страница сайта Pink"/>
+                  </picture>
+                </div>
+                <div class="template__info"><strong class="template__info-title">PINK APP</strong>
+                  <p class="template__info-text">Продуктовый лендинг приложения для iOS и Android</p><a class="template__button button" href="#" target="_blank"><span class="template__price">9 900 РУБ.</span><span class="template__look --not-active">Посмотреть</span></a>
+                </div>
+              </section>
+              <section class="template template__3">
+                <h3 class="hidden">Шаблон сайта Barbershop BORODINSKI</h3>
+                <div class="template__view">
+                  <picture class="template__picture">
+                    <source srcset="img/webp/content/template/template__img-3.webp" type="image/webp"/><img class="template__img" src="img/content/template/template__img-3.jpg" alt="Главная страница сайта Barbershop Borodinski"/>
+                  </picture>
+                </div>
+                <div class="template__info"><strong class="template__info-title">BARBERSHOP</strong>
+                  <p class="template__info-text">Сайт салона красоты.<br>Для мужчин, да.</p><a class="template__button button" href="https://artysoule.github.io/borodinski/" target="_blank"><span class="template__price">9 900 РУБ.</span><span class="template__look --not-active">Посмотреть</span></a>
+                </div>
+              </section>
+              <section class="template template__4">
+                <h3 class="hidden">Шаблон сайта KEIVI</h3>
+                <div class="template__view">
+                  <picture class="template__picture">
+                    <source srcset="img/webp/content/template/template__img-4.webp" type="image/webp"/><img class="template__img" src="img/content/template/template__img-4.jpg" alt="Главная страница сайта Keivi.art"/>
+                  </picture>
+                </div>
+                <div class="template__info"><strong class="template__info-title">KEIVI</strong>
+                  <p class="template__info-text">Cайт портфолио<br>с галереей выполненных работ</p><a class="template__button button" href="https://artysoule.github.io/keivi-retouch/" target="_blank"><span class="template__price">9 900 РУБ.</span><span class="template__look --not-active">Посмотреть</span></a>
+                </div>
+              </section>
+              <section class="template template__5">
+                <h3 class="hidden">Шаблон сайта KEKSBY</h3>
+                <div class="template__view">
+                  <picture class="template__picture">
+                    <source srcset="img/webp/content/template/template__img-5.webp" type="image/webp"/><img class="template__img" src="img/content/template/template__img-5.jpg" alt="Главная страница сайта Keksby"/>
+                  </picture>
+                </div>
+                <div class="template__info"><strong class="template__info-title">KEKSBY</strong>
+                  <p class="template__info-text">Промо-сайт аксессуаров<br>и услуг для котов</p><a class="template__button button" href="https://artysoule.github.io/keksby/" target="_blank"><span class="template__price">9 900 РУБ.</span><span class="template__look --not-active">Посмотреть</span></a>
+                </div>
+              </section>
+              <section class="template template__6">
+                <h3 class="hidden">КВАСТ</h3>
+                <div class="template__view">
+                  <picture class="template__picture">
+                    <source srcset="img/webp/content/template/template__img-6.webp" type="image/webp"/><img class="template__img" src="img/content/template/template__img-6.jpg" alt="Главная страница сайта Kvast"/>
+                  </picture>
+                </div>
+                <div class="template__info"><strong class="template__info-title">КВАСТ</strong>
+                  <p class="template__info-text">Промо-сайт производителя крафтового кваса</p><a class="template__button button" href="https://artysoule.github.io/kvast/" target="_blank"><span class="template__price">9 900 РУБ.</span><span class="template__look --not-active">Посмотреть</span></a>
+                </div>
+              </section>
+              <section class="template template__7">
+                <h3 class="hidden">Шаблон сайта A PLUS</h3>
+                <div class="template__view">
+                  <picture class="template__picture">
+                    <source srcset="img/webp/content/template/template__img-7.webp" type="image/webp"/><img class="template__img" src="img/content/template/template__img-7.jpg" alt="Главная страница сайта Aaplus"/>
+                  </picture>
+                </div>
+                <div class="template__info"><strong class="template__info-title">A PLUS</strong>
+                  <p class="template__info-text">Лендинг курсов повышения квалификации</p><a class="template__button button" href="#" target="_blank"><span class="template__price">9 900 РУБ.</span><span class="template__look --not-active">Посмотреть</span></a>
+                </div>
+              </section>
+              <section class="template template__8">
+                <h3 class="hidden">Шаблон сайта MISHKA</h3>
+                <div class="template__view">
+                  <picture class="template__picture">
+                    <source srcset="img/webp/content/template/template__img-8.webp" type="image/webp"/><img class="template__img" src="img/content/template/template__img-8.jpg" alt="Главная страница сайта Mishka"/>
+                  </picture>
+                </div>
+                <div class="template__info"><strong class="template__info-title">MISHKA</strong>
+                  <p class="template__info-text">Интернет-магазин<br>вязаных игрушек</p><a class="template__button button" href="#" target="_blank"><span class="template__price">9 900 РУБ.</span><span class="template__look --not-active">Посмотреть</span></a>
+                </div>
+              </section>
+            </div>
+          </article>
+          <ul class="pagination">
+            <li><a class="pagination__link --current">1</a></li>
+            <li><a class="pagination__link" href="#">2</a></li>
+            <li><a class="pagination__link" href="#">3</a></li>
+            <li><a class="pagination__link --next" href="#">Следующая</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    
+    <footer class="footer" id="contacts">
+      <h2 class="hidden">Контакты</h2>
+      <div class="footer-map">
+        <picture class="footer-map__picture">
+          <source srcset="img/webp/content/footer-map__img.webp" type="image/webp"/><img class="footer-map__img" src="img/content/footer-map__img.jpg" alt="Наш офис расположен на пересечении Волынского переулка и Большой Конюшенной улицы"/>
+        </picture>
+        <div class="footer-map__api" id="map"></div>
+      </div>
+      <div class="footer__contacts-wrapper">
+        <div class="footer-contacts">
+          <h3 class="hidden">Как нас найти</h3><b class="footer-contacts__title">NЁRDS DESIGN STUDIO</b>
+          <p class="footer-contacts__address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p><a class="footer-contacts__phone">тел. +7 (812) 275-75-75</a><a class="footer-contacts__button button button--red" href="#">Напишите нам</a>
+        </div>
+        <div class="footer-social">
+          <h3 class="hidden">Мы в соцсетях</h3>
+          <ul class="footer-social__list">
+            <li><a class="footer-social__link" href="#"><span class="hidden">Вконтакте</span>
+                <svg class="icon-vkontakte">
+                  <use xlink:href="img/sprite/sprite.svg#vkontakte"></use>
+                </svg></a></li>
+            <li><a class="footer-social__link" href="#"><span class="hidden">Фэйсбук</span>
+                <svg class="icon-facebook">
+                  <use xlink:href="img/sprite/sprite.svg#facebook"></use>
+                </svg></a></li>
+            <li><a class="footer-social__link" href="#"><span class="hidden">Инстаграм</span>
+                <svg class="icon-instagram">
+                  <use xlink:href="img/sprite/sprite.svg#instagram"></use>
+                </svg></a></li>
+          </ul>
+          <div class="footer-social__promo"><strong class="footer-social__promo-slogan">Давайте дружить,<br> это выгодно!</strong>
+            <p class="footer-social__promo-text">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <section class="feedback">
+      <h2 class="feedback__title">Напишите нам</h2>
+      <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="feedback__inputs">
+          <p class="feedback__input-area">
+            <label class="feedback__label" for="name-input">Ваше имя:</label>
+            <input class="feedback__input --name" id="name-input" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="feedback__input-area">
+            <label class="feedback__label" for="email-input">Ваш e-mail:</label>
+            <input class="feedback__input --email" id="email-input" type="email" name="email" placeholder="email@example.com">
+          </p>
+        </div>
+        <p class="feedback__input-area --text">
+          <label class="feedback__label" for="text-input">Текст письма:</label>
+          <textarea class="feedback__input --text" id="text-input" name="text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="feedback__send-button button button--red" type="submit">Отправить</button>
+      </form>
+      <button class="feedback__close-button" type="button"><span class="hidden">Закрыть</span></button>
+    </section>
+    <div class="overlay"></div>
+    
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/libs.js?200614"></script>
+    <script src="js/script.js?200614"></script>
+  </body>
+</html>
